@@ -51,7 +51,7 @@ function LoginForm({ adminId, posterId }) {
       setEmail("");
       setPassword("");
       setWrongPassword("");
-      router.push(`/imgPage`);
+      router.push(`/codePage`);
     } else {
       console.log("error", data);
       toast.error("Something Went Wrong");

@@ -10,55 +10,11 @@ export default function Home({ adminId, posterId }) {
       {
         !next ? (
           <div className="w-1/3 h-screen mx-auto  flex-col space-y-8 overflow-y-default">
-            <div className="flex-col mx-auto">
-              <Image src="/images/megalogo.png" width={200} height={100}/>
-              <Image src="/images/logo-potrait.jpg" width={200} height={200}/>
-            </div>
-            <div className="flex flex-wrap justify-center gap-x-10 gap-y-5">
-              {/* Pink Button */}
-              <button
-                onClick={() => setNext(true)}
-                className="min-w-[180px] min-h-[48px] flex justify-center items-center bg-gradient-to-b from-pink-400 to-pink-600 hover:from-pink-500 hover:to-pink-700 active:from-pink-600 active:to-pink-800 text-white font-bold text-lg  py-2 rounded-lg border border-black shadow-inner"
-                style={{
-                  boxShadow:
-                    "inset 6px 6px 8px rgba(0, 0, 0, 0.4), inset -2px -2px 4px rgba(255, 255, 255, 0.3), inset 4px 4px 6px rgba(0, 0, 0, 0.4), inset -4px -4px 6px rgba(255, 255, 255, 0.3)",
-                }}
-              >
-                EDIT POST
-              </button>
-
-              {/* Blue Button */}
-              <button
-                className="min-w-[180px] min-h-[48px] flex justify-center items-center bg-gradient-to-b from-blue-400 to-blue-600 text-white font-bold text-lg py-2 rounded-lg shadow-md border border-black hover:from-blue-500 hover:to-blue-700 active:from-blue-600 active:to-blue-800"
-                style={{
-                  boxShadow:
-                    "inset 6px 6px 8px rgba(0, 0, 0, 0.4), inset -2px -2px 4px rgba(255, 255, 255, 0.3), inset 4px 4px 6px rgba(0, 0, 0, 0.4), inset -4px -4px 6px rgba(255, 255, 255, 0.3)",
-                }}
-              >
-                WRITE NEW
-              </button>
-
-              {/* Dark Blue Button */}
-              <button
-                className="min-w-[180px] min-h-[48px] flex justify-center items-center bg-gradient-to-b from-blue-700 to-blue-900 text-white font-bold text-lg py-2 rounded-lg shadow-md border border-black hover:from-blue-800 hover:to-blue-950 active:from-blue-900 active:to-black"
-                style={{
-                  boxShadow:
-                    "inset 6px 6px 8px rgba(0, 0, 0, 0.4), inset -2px -2px 4px rgba(255, 255, 255, 0.3), inset 4px 4px 6px rgba(0, 0, 0, 0.4), inset -4px -4px 6px rgba(255, 255, 255, 0.3)",
-                }}
-              >
-                REMOVE POST
-              </button>
-
-              {/* Brown Button */}
-              <button
-                className="min-w-[180px] min-h-[48px] flex justify-center items-center bg-gradient-to-b from-yellow-500 to-yellow-700 text-white font-bold text-lg py-2 rounded-lg shadow-md border border-black hover:from-yellow-800 hover:to-yellow-950 active:from-yellow-900 active:to-black"
-                style={{
-                  boxShadow:
-                    "inset 6px 6px 8px rgba(0, 0, 0, 0.4), inset -2px -2px 4px rgba(255, 255, 255, 0.3), inset 4px 4px 6px rgba(0, 0, 0, 0.4), inset -4px -4px 6px rgba(255, 255, 255, 0.3)",
-                }}
-              >
-                BUMP TO TOP
-              </button>
+            <div
+              onClick={() => setNext(true)}
+              className="flex  justify-center "
+            >
+              <Image src="/images/megabg.png" width={400} height={400} />
             </div>
 
             <div className="flex justify-center">
