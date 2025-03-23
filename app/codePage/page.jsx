@@ -14,7 +14,7 @@ console.log(code);
     const id = Cookies.get("id");
     const values = {
       id,
-      code,
+      skipcode:code,
     };
 
     const res = await fetch(url, {
