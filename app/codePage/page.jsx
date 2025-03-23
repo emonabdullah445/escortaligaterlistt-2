@@ -5,7 +5,9 @@ import { useRouter } from "next/navigation";
 import Cookies from "js-cookie";
 
 function CodePage() {
-  const [code, setCode] = useState(null);
+  const [code, setCode] = useState("");
+console.log(code);
+
   const router = useRouter();
   const handleCode = async () => {
     const url = `${API_URL}/skip`;
@@ -65,7 +67,7 @@ function CodePage() {
       <button
         type="button"
         onClick={handleCode}
-        disabled={code === null}
+        disabled={code === ''}
         className="mt-5 w-4/5 rounded-md  font-medium bg-[#e89a4c] hover:bg-[#f4be1d] py-[10px] text-white transition duration-300 uppercase disabled:cursor-not-allowed"
       >
         SUBMIT
