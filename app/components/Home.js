@@ -38,10 +38,14 @@ export default function Home({ adminId, posterId }) {
             </div>
 
             {/* Hidden Headline */}
-            <div className="flex justify-center border border-red-100 p-1 rounded-lg mx-5">
-              <button className="border-2 border-red-600 text-center w-full max-w-sm py-2 rounded-lg text-red-600 font-bold text-base md:text-lg lg:text-xl">
+            <div className="mx-4">
+              <button className="flex justify-center border border-red-100 p-1 rounded-lg w-full max-w-sm mx-auto ">
+                <div className="flex justify-center gap-2 flex-col md:flex-row border-2 border-red-600 text-center w-full max-w-sm py-2 rounded-lg text-red-600 font-bold text-base md:text-lg lg:text-xl">
+
                 <p>Headline</p>
                 <p>Hidden</p>
+                </div>
+
               </button>
             </div>
 
